@@ -42,8 +42,8 @@ WORKDIR $HOME
 RUN wget --quiet https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.5.2823/forge-1.12.2-14.23.5.2823-installer.jar
 
 # run Minecraft installer
-RUN java -jar forge-$VERSION-installer.jar --installServer
-RUN rm forge-$VERSION-installer.jar
+RUN java -jar forge-1.12.2-14.23.5.2823-installer.jar --installServer
+RUN rm forge-1.12.2-14.23.5.2823-installer.jar
 
 # Install some mods
 RUN mkdir mods
